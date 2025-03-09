@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robo World</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/static/css/robo.css"></script>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="text-center py-10 bg-blue-700 shadow-lg">
+        <h1 class="text-4xl font-bold">Welcome to Robo World</h1>
+        <p class="text-lg">Explore the future of robotics and AI</p>
+    </header>
+
+    <section class="p-10 text-center">
+        <h2 class="text-3xl font-semibold">Our Vision</h2>
+        <p class="mt-4 text-gray-300">At Robo World, we push the boundaries of technology to create intelligent robots that enhance human lives.</p>
+    </section>
+
+    <section class="p-10 bg-gray-800 text-center">
+        <h2 class="text-3xl font-semibold">Features</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <div class="p-6 bg-gray-700 rounded-xl shadow-lg feature-box">
+                <h3 class="text-xl font-bold">AI-Powered Robots</h3>
+                <p class="mt-2 text-gray-300">Smart AI systems that adapt and learn.</p>
+            </div>
+            <div class="p-6 bg-gray-700 rounded-xl shadow-lg feature-box">
+                <h3 class="text-xl font-bold">Futuristic Designs</h3>
+                <p class="mt-2 text-gray-300">Sleek, efficient, and innovative robotic models.</p>
+            </div>
+            <div class="p-6 bg-gray-700 rounded-xl shadow-lg feature-box">
+                <h3 class="text-xl font-bold">Human-Robot Interaction</h3>
+                <p class="mt-2 text-gray-300">Seamless communication with intuitive controls.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-10 text-center">
+        <h2 class="text-3xl font-semibold">Gallery</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <img src="/static/img/robo3.jpg" class="rounded-lg shadow-lg gallery-img" alt="Robot 1">
+            <img src="/static/img/robo4.avif" class="rounded-lg shadow-lg gallery-img" alt="Robot 2">
+            <img src="/static/img/robo5.jpg" class="rounded-lg shadow-lg gallery-img" alt="Robot 3">
+        </div>
+    </section>
+
+    <section class="p-10 bg-gray-800 text-center">
+        <h2 class="text-3xl font-semibold">Contact Us</h2>
+        <p class="mt-4 text-gray-300">Want to know more? Reach out to us at <a href="mailto:info@roboworld.com" class="text-blue-400 hover:text-blue-300 transition duration-300">info@roboworld.com</a></p>
+    </section>
+
+    <footer class="text-center py-4 bg-blue-700 mt-10">
+        <p>&copy; 2025 Robo World. All rights reserved.</p>
+    </footer>
+
+    <!-- Mini Robo -->
+    <div id="mini-robo" class="bg-blue-500">
+        🤖
+    </div>
+
+    <!-- Chat Box -->
+    <div id="chat-container" class="fixed bottom-20 right-10 bg-gray-800 p-4 rounded-lg shadow-lg hidden w-80">
+        <h3 class="text-lg font-bold">Ask Mini Robo</h3>
+        <input id="user-query" type="text" placeholder="Type your question..." class="w-full p-2 rounded bg-gray-700 text-white mt-2">
+        <button id="ask-btn" class="mt-2 bg-blue-500 px-4 py-2 rounded text-white w-full">Ask</button>
+        <button id="voice-btn" class="mt-2 bg-green-500 px-4 py-2 rounded text-white w-full">🎤 Speak</button>
+        <p id="robo-response" class="mt-2 text-gray-300"></p>
+    </div>
+</body>
+
+<script src="/static/css/robo.js"></script>
+</html>
